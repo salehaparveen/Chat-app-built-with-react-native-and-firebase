@@ -17,8 +17,6 @@ In this project We have used following Firebase serivces.
 * **Firebase RealTime Database** : That's we for handle realtime chat
 * **Firebase Storage** : That's we use for store user profile image
 
-BinBytes is an mobile & web application development agency in Rajkot, India. You'll find an overview of all our services [on our website](https://binbytes.com).
-
 ## Requirements
 
 ### Mandatory
@@ -64,17 +62,6 @@ react-native run-android
   <img src="https://i.imgur.com/RUJUqGE.jpg" />
 </p>
 
-## Security
-
-If you discover any security related issues, please email author email instead of using the issue tracker.
-
-## Credits
-
-- [Bhavik Charola](https://github.com/bhavik66)
-
-## License
-
-MIT License. Please see the [license file](LICENSE.md) for more information.
 
 
 [react_native-badge]: https://img.shields.io/badge/React%20Native-0.57.7-blue.svg?style=flat
