@@ -1,15 +1,25 @@
-import 'react-native-gesture-handler';
-import * as React from 'react';
-import {Provider as PaperProvider} from 'react-native-paper';
-import FlashMessage from 'react-native-flash-message';
+import React from 'react'
+import { View, StatusBar } from 'react-native'
 
-import AppNavigator from './navigation/AppNavigator';
+import { Provider } from 'mobx-react'
 
-export default function App() {
-  return (
-    <PaperProvider>
-      <AppNavigator />
-      <FlashMessage position="bottom" floating />
-    </PaperProvider>
-  );
+import AppNavigator from './layout/index'
+import colors from './theme/colors'
+import stores from './store'
+import './utils/enableFontPatch'
+
+export default class Root extends React.Component {
+  render() {
+    return (
+      <Provider {...stores}>
+        <View style={{ flex: 1 }}>
+          <StatusBar
+            barStyle={'light-content'}
+            backgroundColor={colors.primary}
+          />
+          <AppNavigator />
+        </View>
+      </Provider>
+    )
+  }
 }
